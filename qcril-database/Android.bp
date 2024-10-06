@@ -3,6 +3,13 @@
 // SPDX-License-Identifier: Apache-2.0
 //
 
+filegroup {
+    name: "rildb_config_sql_files",
+    srcs: [
+        "config/0015.1_config.sql",
+    ],
+}
+
 genrule {
     name: "qcril_config_database",
     enabled: true,
@@ -23,4 +30,7 @@ prebuilt_etc {
     src: ":qcril_config_database",
     relative_install_path: "qcril_database",
     vendor: true,
+    required: [
+        "0015.1_config.sql",
+    ],
 }
