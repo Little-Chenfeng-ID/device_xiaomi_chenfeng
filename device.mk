@@ -54,6 +54,7 @@ PRODUCT_SHIPPING_API_LEVEL := $(BOARD_SHIPPING_API_LEVEL)
 
 # Audio
 PRODUCT_PACKAGES += \
+    android.hardware.audio.sounddose-vendor-impl \
     android.hardware.audio.service
 
 PRODUCT_PACKAGES += \
