@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/derp_peridot.mk
+    $(LOCAL_DIR)/lineage_peridot.mk
 
 COMMON_LUNCH_CHOICES := \
-    derp_peridot-eng \
-    derp_peridot-userdebug \
-    derp_peridot-user
+    lineage_peridot-eng \
+    lineage_peridot-userdebug \
+    lineage_peridot-user
