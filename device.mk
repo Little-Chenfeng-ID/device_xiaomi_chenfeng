@@ -153,7 +153,8 @@ PRODUCT_PACKAGES += \
     libutilscallstack.vendor \
     libyuv.vendor \
     libwrapper_dlengine_shim \
-    libprocessgroup_shim
+    libprocessgroup_shim \
+    libmibokeh_shim
 
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.camera.flash-autofocus.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.flash-autofocus.xml \

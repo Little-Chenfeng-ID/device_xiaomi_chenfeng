@@ -6,6 +6,13 @@ cc_library_shared {
 }
 
 cc_library_shared {
+    name: "libmibokeh_shim",
+    srcs: ["libmibokeh_shim/libmibokeh_shim.cpp"],
+    shared_libs: ["libc", "libdl", "libm"],
+    vendor: true,
+}
+
+cc_library_shared {
     name: "libcodec2_hidl_shim",
     srcs: ["libcodec2_hidl_shim/libcodec2_hidl_shim.cpp"],
     shared_libs: ["libui","libutils"],
