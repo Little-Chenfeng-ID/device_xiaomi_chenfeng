@@ -2125,6 +2125,13 @@ odm/lib64/camera/com.qti.tuned.chenfeng_ofilm_s5kjn1_tele.bin
 odm/lib64/camera/com.qti.tuned.chenfeng_sunny_s5kgd2sm03_front.bin
 odm/lib64/camera/com.qti.tuned.default.bin
 
+# Camera missing blobs 
+odm/lib64/libmiZA.so
+odm/lib64/libmiphone_preview_mdbokeh.so
+odm/lib64/libIntelligentFocus.so
+odm/lib64/libvideoBokeh.so
+odm/lib64/libmiSAT.so
+
 # Charger
 odm/etc/charger/BAA_config_common.json
 odm/etc/charger/BAA_config_chenfeng.json
