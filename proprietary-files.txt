@@ -3586,6 +3586,13 @@ odm/firmware/aw8624_rtp.bin
 # WiFi
 vendor/bin/cnss-daemon
 vendor/etc/init/init.vendor.wlan.rc
+vendor/etc/wifi/kiwi_v2/WCNSS_qcom_cfg.ini
+vendor/etc/wifi/p2p_supplicant_overlay.conf
+vendor/etc/wifi/passpointProfile.conf
+vendor/etc/wifi/qca6750/WCNSS_qcom_cfg.ini
+vendor/etc/wifi/vendor_cmd.xml
+vendor/etc/wifi/wpa_supplicant_overlay.conf
+vendor/lib64/libWlanServiceJni.so
 vendor/lib64/libcert_parse.wpa_s.so
 vendor/lib64/vendor.qti.hardware.wigig.netperftuner@1.0.so
 
