@@ -56,3 +56,7 @@ prebuilt_hidl_interfaces {
         "vendor.xiaomi.hardware.bgservice@1.0::IBGService",
     ],
 }
+
+cc_library_shared {
+    name: "libldacBT_bco",
+}
