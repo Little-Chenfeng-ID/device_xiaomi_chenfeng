@@ -1,8 +1,8 @@
 # All unpinned blobs below are extracted from chenfeng 15 AQ3A.240912.001 OS2.0.104.0.VNPMIXM release-keys
 
 # ACDB
-odm/etc/acdbdata/Forte/Forte_acdb_cal.acdb
-odm/etc/acdbdata/Forte/Forte_workspaceFileXml.qwsp
+odm/etc/acdbdata/Forte/Forte_acdb_cal.acdb:odm/etc/acdbdata/cliffs_mtp/Forte_acdb_cal.acdb
+odm/etc/acdbdata/Forte/Forte_workspaceFileXml.qwsp:odm/etc/acdbdata/cliffs_mtp/Forte_workspaceFileXml.qwsp
 vendor/etc/acdbdata/IDP_UPD/IDP_UPD_acdb_cal.acdb
 vendor/etc/acdbdata/IDP_UPD/IDP_UPD_workspaceFileXml.qwsp
 vendor/etc/acdbdata/cliffs_cdp/CDP_cliffs_acdb_cal.acdb
