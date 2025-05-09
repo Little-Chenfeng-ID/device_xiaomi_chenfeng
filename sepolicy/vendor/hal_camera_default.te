@@ -1,1 +1,2 @@
 binder_call(hal_camera_default, platform_app)
+dontaudit hal_camera_default vendor_hal_qspmhal_hwservice:service_manager find;
