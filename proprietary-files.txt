@@ -2135,6 +2135,7 @@ odm/lib64/libvideoBokeh.so
 odm/lib64/libmiSAT.so
 odm/lib64/libmiSATTranslate.so
 odm/lib64/libmialgo_video_seg_depth.so
+odm/lib64/libmialgo_video_colourkeeping.so
 
 # Charger
 odm/etc/charger/BAA_config_common.json
