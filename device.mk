@@ -586,9 +586,6 @@ PRODUCT_PACKAGES += \
     telephony-ext
 
 PRODUCT_PACKAGES += \
-    qcrilNrDb_vendor
-
-PRODUCT_PACKAGES += \
     xiaomi-telephony-stub
 
 PRODUCT_BOOT_JARS += \
