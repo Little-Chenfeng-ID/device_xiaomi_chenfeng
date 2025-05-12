@@ -24,3 +24,24 @@ cc_library_shared {
     ],
     vendor: true,
 }
+
+cc_library_shared {
+    name: "libcameraflare_shim",
+    srcs: ["libcameraflare_shim/libcameraflare_shim.cpp"],
+    shared_libs: ["libc", "libdl", "libm"],
+    vendor: true,
+}
+
+cc_library_shared {
+    name: "libcamerahdr_shim",
+    srcs: ["libcamerahdr_shim/libcamerahdr_shim.cpp"],
+    shared_libs: ["libc", "libdl", "libm"],
+    vendor: true,
+}
+
+cc_library_shared {
+    name: "libcameraplugin_shim",
+    srcs: ["libcameraplugin_shim/libcameraplugin_shim.cpp"],
+    shared_libs: ["libui","libutils"],
+    vendor: true,
+}

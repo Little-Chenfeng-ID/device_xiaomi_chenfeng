@@ -459,3 +459,9 @@ PRODUCT_PACKAGES += \
 # WiFi Display
 PRODUCT_PACKAGES += \
     libwfdaac_vendor
+
+# Just try shim
+PRODUCT_PACKAGES += \
+    libcamerahdr_shim \
+    libcameraflare_shim \
+    libcameraplugin_shim
