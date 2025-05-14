@@ -76,7 +76,7 @@ void vendor_load_properties() {
         brand = "Xiaomi";
         description = "chenfeng-user 15 AQ3A.240912.001 OS2.0.102.0.VNJINXM release-keys";
         fingerprint = "Xiaomi/chenfeng/chenfeng:15/AQ3A.240912.001/OS2.0.102.0.VNJINXM:user/release-keys";
-        marketname = "Xiaomi Civi 14 Pro";
+        marketname = "Xiaomi 14 Civi";
         model = "24053PY09I";
     }
 
