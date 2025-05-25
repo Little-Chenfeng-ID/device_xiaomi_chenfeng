@@ -138,9 +138,9 @@ BOARD_VENDOR_RAMDISK_RECOVERY_KERNEL_MODULES_LOAD  := $(patsubst %,$(RAMDISK_MOD
 BOARD_VENDOR_RAMDISK_KERNEL_MODULES_BLOCKLIST_FILE := $(RAMDISK_MODULES_PATH)/modules.blocklist
 
 # Lineage Health
-TARGET_HEALTH_CHARGING_CONTROL_CHARGING_ENABLED  := 0
-TARGET_HEALTH_CHARGING_CONTROL_CHARGING_DISABLED  := 1
-TARGET_HEALTH_CHARGING_CONTROL_CHARGING_PATH := /sys/class/qcom-battery/night_charging
+$(call soong_config_set,lineage_health,charging_control_charging_disabled,1)
+$(call soong_config_set,lineage_health,charging_control_charging_enabled,0)
+$(call soong_config_set,lineage_health,charging_control_charging_path,/sys/class/qcom-battery/night_charging)
 
 # MiuiCamera
 CAMERA_PACKAGE_NAME := com.android.camera
