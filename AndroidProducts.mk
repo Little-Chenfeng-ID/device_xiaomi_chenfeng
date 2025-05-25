@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_chenfeng.mk
+    $(LOCAL_DIR)/genesis_chenfeng.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_chenfeng-eng \
-    lineage_chenfeng-userdebug \
-    lineage_chenfeng-user
+    genesis_chenfeng-eng \
+    genesis_chenfeng-userdebug \
+    genesis_chenfeng-user
