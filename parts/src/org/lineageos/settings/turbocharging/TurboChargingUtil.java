@@ -26,8 +26,8 @@ public class TurboChargingUtil {
     private static final String PREF_TURBO_ENABLED = "turbo_enable";
     private static final String PREF_TURBO_CURRENT = "turbo_current";
     private static final String PROP_TURBO_CURRENT = "persist.sys.turbo_charge_current";
-    private static final String DEFAULT_OFF_VALUE = "6000000";
-    private static final String DEFAULT_ON_VALUE = "9750000";
+    private static final String DEFAULT_OFF_VALUE = "4090000";
+    private static final String DEFAULT_ON_VALUE = "6100000";
 
     public static void applyTurboSetting(Context context) {
         SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(context);

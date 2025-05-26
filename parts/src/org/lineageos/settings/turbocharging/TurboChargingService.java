@@ -41,8 +41,8 @@ package org.lineageos.settings.turbocharging;
  
      private static final String PROP_TURBO_CURRENT = "persist.sys.turbo_charge_current";
  
-     private static final String DEFAULT_OFF_VALUE = "6000000";
-     private static final String DEFAULT_ON_VALUE = "9750000";
+    private static final String DEFAULT_OFF_VALUE = "4090000";
+    private static final String DEFAULT_ON_VALUE = "6100000";
  
      private UEventObserver mObserver;
      private Handler mHandler = new Handler();
