@@ -119,7 +119,7 @@
     <!-- Turbo Charging -->
     <string name="turbo_charge_title">Turbo Charging</string>
     <string name="turbo_enable_title">Enable Turbo Charging</string>
-    <string name="turbo_charge_summary">Enable Turbo Charging for fast charging up to 90W</string>
+    <string name="turbo_charge_summary">Enable Turbo Charging for fast charging up to 67W</string>
     <string name="turbo_charge_current_pref_title">Charging Wattage</string>
 
     <!-- Sports Mode -->
