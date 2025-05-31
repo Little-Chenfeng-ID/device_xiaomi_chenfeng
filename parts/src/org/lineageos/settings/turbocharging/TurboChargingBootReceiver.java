@@ -35,8 +35,8 @@ public class TurboChargingBootReceiver extends BroadcastReceiver {
     private static final String PREF_SPORTS_MODE = "sports_mode";
 
     private static final String PROP_TURBO_CURRENT = "persist.sys.turbo_charge_current";
-    private static final String DEFAULT_OFF_VALUE = "6000000";
-    private static final String DEFAULT_ON_VALUE = "9750000";
+    private static final String DEFAULT_OFF_VALUE = "4090000";
+    private static final String DEFAULT_ON_VALUE = "6000000";
 
     private static final String SPORTS_MODE_NODE = "/sys/class/qcom-battery/sport_mode";
 

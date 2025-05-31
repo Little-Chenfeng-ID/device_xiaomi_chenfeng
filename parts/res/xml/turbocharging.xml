@@ -22,6 +22,6 @@
         android:title="@string/turbo_charge_current_pref_title"
         android:entries="@array/turbo_modes_entries"
         android:entryValues="@array/turbo_modes_values"
-        android:defaultValue="9750000"
+        android:defaultValue="6000000"
         android:summary="%s" />
 </PreferenceScreen>
