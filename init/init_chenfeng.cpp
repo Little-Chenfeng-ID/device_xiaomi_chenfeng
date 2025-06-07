@@ -62,7 +62,7 @@ void vendor_load_properties() {
     std::string fingerprint;
     std::string description;
     std::string marketname;
-    std::string mod_device = "chenfeng_global"; // Default mod_device
+    std::string mod_device = "chenfeng_in"; // Default mod_device
 
     if (region == "CN") {
         device = "chenfeng";

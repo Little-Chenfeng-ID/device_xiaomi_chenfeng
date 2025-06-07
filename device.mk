@@ -23,7 +23,7 @@ $(call inherit-product, packages/modules/Virtualization/apex/product_packages.mk
 $(call inherit-product, hardware/qcom-caf/common/common.mk)
 
 # Inherit from the MiuiCamera setup
-$(call inherit-product-if-exists, device/xiaomi/chenfeng-miuicamera/device.mk)
+$(call inherit-product-if-exists, vendor/xiaomi/camera/miuicamera.mk)
 
 # Call the BCR setup
 $(call inherit-product-if-exists, vendor/bcr/bcr.mk)

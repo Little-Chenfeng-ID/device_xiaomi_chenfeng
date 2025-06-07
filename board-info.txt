@@ -1,1 +1,1 @@
-require board=pineapple|chenfeng
+require board=pineapple|chenfeng_in
