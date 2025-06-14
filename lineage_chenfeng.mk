@@ -25,11 +25,7 @@ TARGET_HAS_UDFPS := true
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     BuildDesc="chenfeng_global-user 15 AQ3A.240912.001 OS2.0.105.0.VNJCNXM release-keys" \
-    BuildFingerprint=POCO/chenfeng_global/chenfeng:15/AQ3A.240912.001/OS2.0.105.0.VNJCNXM:user/release-keys \
-    DeviceName=chenfeng
-    DeviceProduct=chenfeng_global \
-    SystemName=chenfeng_global \
-    SystemDevice=chenfeng
+    BuildFingerprint=POCO/chenfeng_global/chenfeng:15/AQ3A.240912.001/OS2.0.105.0.VNJCNXM:user/release-keys
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 

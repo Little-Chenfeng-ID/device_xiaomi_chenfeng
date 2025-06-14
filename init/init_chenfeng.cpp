@@ -1,93 +1,89 @@
 /*
-     Copyright (C) 2024 The LineageOS Project
-     SPDX-License-Identifier: Apache-2.0
+   Copyright (c) 2015, The Linux Foundation. All rights reserved.
+                 2016 The CyanogenMod Project.
+                 2019-2020 The LineageOS Project.
+                 2021 The Android Open Source Project.
+                 2022-2024 The LineageOS Project.
+
+   SPDX-License-Identifier: Apache-2.0
+
  */
 
-#include <vector>
-#include <android-base/properties.h>
+#include <cstdlib>
+#include <string.h>
+
 #define _REALLY_INCLUDE_SYS__SYSTEM_PROPERTIES_H_
 #include <sys/_system_properties.h>
+#include <android-base/properties.h>
+
+#include "property_service.h"
+#include "vendor_init.h"
 
 using android::base::GetProperty;
+using std::string;
 
-std::vector<std::string> ro_props_default_source_order = {
-    "",
-    "bootimage.",
-    "odm.",
-    "odm_dlkm.",
-    "product.",
-    "system.",
-    "system_ext.",
-    "vendor.",
-    "vendor_dlkm.",
+// List of partitions to override props
+static const string source_partitions[] = {
+    "", "bootimage.", "odm.", "product.", "system.",
+    "system_dlkm.", "system_ext.", "vendor.", "vendor_dlkm."
 };
 
-void property_override(char const prop[], char const value[], bool add = true) {
-    prop_info *pi;
-    pi = (prop_info *) __system_property_find(prop);
-    if (pi)
+bool IsRecoveryMode() {
+    return access("/system/bin/recovery", F_OK) == 0;
+}
+
+void property_override(char const prop[], char const value[]) {
+    auto pi = (prop_info*) __system_property_find(prop);
+
+    if (pi != nullptr)
         __system_property_update(pi, value, strlen(value));
-    else if (add)
+    else
         __system_property_add(prop, strlen(prop), value, strlen(value));
 }
 
-void set_ro_build_prop(const std::string &prop, const std::string &value) {
-    for (const auto &source : ro_props_default_source_order) {
-        auto prop_name = "ro." + source + "build." + prop;
-        if (source == "")
-            property_override(prop_name.c_str(), value.c_str());
-        else
-            property_override(prop_name.c_str(), value.c_str(), false);
-    }
+void set_build_prop(const string &prop, const string &value) {
+    property_override(prop.c_str(), value.c_str());
 }
 
-void set_ro_product_prop(const std::string &prop, const std::string &value) {
-    for (const auto &source : ro_props_default_source_order) {
-        auto prop_name = "ro.product." + source + prop;
-        property_override(prop_name.c_str(), value.c_str(), false);
+void set_ro_build_prop(const string &prop, const string &value) {
+    string prop_name;
+    for (const string &source : source_partitions) {
+        prop_name = "ro.product." + source + prop;
+        property_override(prop_name.c_str(), value.c_str());
     }
 }
 
 void vendor_load_properties() {
-    std::string region;
-    std::string sku;
-    std::string hwversion;
-    region = GetProperty("ro.boot.hwc", "");
-    sku = GetProperty("ro.boot.hardware.sku", "");
-    hwversion = GetProperty("ro.boot.hwversion", "");
+    // Detect variant and override properties
+    string region = GetProperty("ro.boot.hwc", "");
+    string sku = GetProperty("ro.boot.hardware.sku", "");
 
-    std::string model;
-    std::string brand;
-    std::string device;
-    std::string fingerprint;
-    std::string description;
-    std::string marketname;
-    std::string mod_device = "chenfeng_global"; // Default mod_device
-
-    if (region == "CN") {
-        device = "chenfeng";
-        brand = "Xiaomi";
-        description = "chenfeng_global-user 15 AQ3A.240912.001 OS2.0.105.0.VNJCNXM release-keys";
-        fingerprint = "Xiaomi/chenfeng_global/chenfeng:15/AQ3A.240912.001/OS2.0.100.0.VNPMIXM:user/release-keys";
-        marketname = "Xiaomi Civi 4 Pro";
-        model = "24053PY09C";
-    } else if (region == "IN") {
-        device = "chenfeng";
-        brand = "Xiaomi";
-        description = "chenfeng-user 15 AQ3A.240912.001 OS2.0.102.0.VNJINXM release-keys";
-        fingerprint = "Xiaomi/chenfeng/chenfeng:15/AQ3A.240912.001/OS2.0.102.0.VNJINXM:user/release-keys";
-        marketname = "Xiaomi 14 Civi";
-        model = "24053PY09I";
+    // Normalize SKU
+    if (sku == "chenfengin") {
+        sku = "chenfeng";
     }
 
-    set_ro_build_prop("fingerprint", fingerprint);
-    set_ro_product_prop("brand", brand);
-    set_ro_product_prop("device", device);
-    set_ro_product_prop("model", model);
-    
-    property_override("ro.product.marketname", marketname.c_str());
-    property_override("ro.build.description", description.c_str());
-    if (!mod_device.empty()) {
-        property_override("ro.product.mod_device", mod_device.c_str());
+    // Override device specific props
+    set_build_prop("ro.build.product", sku);
+    set_ro_build_prop("device", sku);
+
+    if (sku == "chenfeng") { // Xiaomi 14
+        if (region == "CN") { // China
+            set_ro_build_prop("model", "24053PY09C");
+            set_ro_build_prop("name", "chenfeng");
+        } else {              // Global
+            set_ro_build_prop("model", "24053PY09I");
+            set_ro_build_prop("name", "chenfengin");
+        }
+    }  else if (sku == "chenfeng") { // Xiaomi Fold 4
+        if (region == "CN") { // China
+            set_ro_build_prop("model", "24053PY09C");
+            set_ro_build_prop("name", "chenfeng");
+        } else {              // Global
+            set_ro_build_prop("model", "24053PY09I");
+            set_ro_build_prop("name", "chenfengin");
+        }
     }
+    // Override hardware revision
+    set_build_prop("ro.boot.hardware.revision", sku);
 }
