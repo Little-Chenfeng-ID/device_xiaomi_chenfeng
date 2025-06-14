@@ -10,6 +10,9 @@ BUILD_BROKEN_DUP_RULES := true
 BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
 SELINUX_IGNORE_NEVERALLOWS := true
 
+# OTA
+TARGET_OTA_ASSERT_DEVICE := chenfeng, chenfengin
+
 # A/B
 AB_OTA_UPDATER := true
 AB_OTA_PARTITIONS := \
@@ -75,9 +78,6 @@ DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := \
 DEVICE_MATRIX_FILE := $(DEVICE_PATH)/configs/hidl/compatibility_matrix.xml
 DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/configs/hidl/manifest_vendor.xml
 ODM_MANIFEST_FILES := $(DEVICE_PATH)/configs/hidl/manifest_odm.xml
-
-# Inherit from proprietary files for miuicamera
--include device/xiaomi/chenfeng-miuicamera/BoardConfig.mk
 
 # Kernel
 BOARD_INCLUDE_DTB_IN_BOOTIMG := true

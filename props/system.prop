@@ -52,8 +52,5 @@ ro.config.dha_th_rate=2.3
 ro.config.sdha_apps_bg_max=64
 ro.config.sdha_apps_bg_min=8
 
-# Camera
-vendor.camera.aux.packagelist=org.lineageos.aperture,com.android.camera,com.google.camera,com.snapchat.android
-
 # Disable default frame rate limit for games
 debug.graphics.game_default_frame_rate.disabled=1
