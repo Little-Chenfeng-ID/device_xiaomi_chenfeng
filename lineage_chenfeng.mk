@@ -24,8 +24,9 @@ PRODUCT_MODEL := 24053PY09I
 TARGET_HAS_UDFPS := true
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    BuildDesc="chenfeng_global-user 15 AQ3A.240912.001 OS2.0.105.0.VNJCNXM release-keys" \
-    BuildFingerprint=POCO/chenfeng_global/chenfeng:15/AQ3A.240912.001/OS2.0.105.0.VNJCNXM:user/release-keys
+    BuildDesc=$(call normalize-path-list, "chenfeng chenfeng 14 UKQ1.240624.001 OS2.0.105.0.VNJINXM release-keys")
+
+BUILD_FINGERPRINT := Xiaomi/chenfeng_in/chenfeng:14/UKQ1.240624.001/OS2.0.105.0.VNJINXM:user/release-keys
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
