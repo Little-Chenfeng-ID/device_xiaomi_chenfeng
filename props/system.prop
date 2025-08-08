@@ -1,6 +1,4 @@
 # Camera
-persist.vendor.camera.privapp.list=org.codeaurora.snapcam,com.android.camera
-ro.com.google.lens.oem_camera_package=com.android.camera
 ro.hardware.camera=xiaomi
 ro.miui.notch=1
 ro.product.mod_device=chenfeng_global
@@ -51,9 +49,6 @@ ro.config.dha_lmk_scale=0.545
 ro.config.dha_th_rate=2.3
 ro.config.sdha_apps_bg_max=64
 ro.config.sdha_apps_bg_min=8
-
-# Camera
-vendor.camera.aux.packagelist=org.lineageos.aperture,com.android.camera,com.google.camera,com.snapchat.android
 
 # Disable default frame rate limit for games
 debug.graphics.game_default_frame_rate.disabled=1
