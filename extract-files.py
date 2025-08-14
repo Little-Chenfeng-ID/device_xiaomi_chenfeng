@@ -22,7 +22,7 @@ from extract_utils.main import (
 )
 
 namespace_imports = [
-    'device/xiaomi/peridot',
+    'device/xiaomi/chenfeng',
     'hardware/qcom-caf/sm8650',
     'hardware/xiaomi',
     'vendor/qcom/opensource/commonsys-intf/display',
@@ -106,7 +106,7 @@ blob_fixups: blob_fixups_user_type = {
 }
 
 module = ExtractUtilsModule(
-    'peridot',
+    'chenfeng',
     'xiaomi',
     blob_fixups=blob_fixups,
     lib_fixups=lib_fixups,

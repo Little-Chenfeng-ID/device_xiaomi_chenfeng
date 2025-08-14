@@ -23,7 +23,7 @@ $(call inherit-product, packages/modules/Virtualization/apex/product_packages.mk
 $(call inherit-product, hardware/qcom-caf/common/common.mk)
 
 # Inherit from the MiuiCamera setup
-$(call inherit-product-if-exists, device/xiaomi/peridot-miuicamera/device.mk)
+$(call inherit-product-if-exists, device/xiaomi/chenfeng-miuicamera/device.mk)
 
 # Call the BCR setup
 $(call inherit-product-if-exists, vendor/bcr/bcr.mk)
@@ -272,7 +272,7 @@ PRODUCT_PACKAGES += \
     libhwbinder.vendor
 
 # Init
-$(call soong_config_set,libinit,vendor_init_lib,//$(LOCAL_PATH):libinit_peridot)
+$(call soong_config_set,libinit,vendor_init_lib,//$(LOCAL_PATH):libinit_chenfeng)
 
 # IPACM
 PRODUCT_PACKAGES += \
@@ -307,7 +307,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     init.fingerprint.rc \
     init.qcom.rc \
-    init.peridot.rc \
+    init.chenfeng.rc \
     init.qti.kernel.rc \
     init.recovery.qcom.rc \
     init.target.rc
@@ -460,21 +460,18 @@ PRODUCT_COPY_FILES += \
 
 # Overlays
 PRODUCT_PACKAGES += \
-    ApertureOverlayPeridot \
-    CarrierConfigOverlayPeridot \
-    FrameworkOverlayPeridot \
-    LineageSDKOverlayPeridot \
-    NfcOverlayPeridot \
-    SecureElementOverlayPeridot \
-    SettingsOverlayPeridot \
-    SettingsProviderOverlayPeridotPOCO \
-    SettingsProviderOverlayPeridotRedmi \
-    SystemUIOverlayPeridot \
-    TelephonyOverlayPeridot \
-    FastChargePeridot \
-    WifiOverlayPeridot \
-    WifiOverlayPeridotPOCO \
-    WifiOverlayPeridotRedmi
+    ApertureOverlayChenfeng \
+    CarrierConfigOverlayChenfeng \
+    FrameworkOverlayChenfeng \
+    LineageSDKOverlayChenfeng \
+    NfcOverlayChenfeng \
+    SecureElementOverlayChenfeng \
+    SettingsOverlayChenfeng \
+    SettingsProviderOverlayChenfeng \
+    SystemUIOverlayChenfeng \
+    TelephonyOverlayChenfeng \
+    FastChargeChenfeng \
+    WifiOverlayChenfeng
 
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
@@ -508,7 +505,6 @@ PRODUCT_PACKAGES += \
 # SKU
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/props/odm_CN.prop:$(TARGET_COPY_OUT_ODM)/etc/odm_CN.prop \
-    $(LOCAL_PATH)/props/odm_GL.prop:$(TARGET_COPY_OUT_ODM)/etc/odm_GL.prop \
     $(LOCAL_PATH)/props/odm_IN.prop:$(TARGET_COPY_OUT_ODM)/etc/odm_IN.prop
 
 # Radio
@@ -715,4 +711,4 @@ PRODUCT_BOOT_JARS += \
     WfdCommon
 
 # Vendor
-$(call inherit-product, vendor/xiaomi/peridot/peridot-vendor.mk)
+$(call inherit-product, vendor/xiaomi/chenfeng/chenfeng-vendor.mk)

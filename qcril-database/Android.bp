@@ -15,8 +15,8 @@ genrule {
     name: "qcril_config_database",
     enabled: true,
     srcs: [
-        "//vendor/xiaomi/peridot:proprietary_rildb_other_sql_files",
-        "//vendor/xiaomi/peridot:proprietary_rildb_config_sql_files",
+        "//vendor/xiaomi/chenfeng:proprietary_rildb_other_sql_files",
+        "//vendor/xiaomi/chenfeng:proprietary_rildb_config_sql_files",
     ],
     tools: [
         "generate_qcril_db",

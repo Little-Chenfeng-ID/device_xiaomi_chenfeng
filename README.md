@@ -1,7 +1,7 @@
-Device configuration for POCO F6 5G (peridot)
+Device configuration for Xiaomi 14 Civi 5G (chenfeng)
 =========================================
 
-The POCO F6 5G was announced in May 2024.
+The Xiaomi 14 Civi 5G was announced in May 2024.
 
 It is engineered to elevate your smartphone experience. Equipped with lightning-fast processing, stunning display, and advanced camera capabilities, it's your perfect companion for work and play.
 
@@ -23,7 +23,7 @@ Front Camera | 20 MP, f/2.2, (wide), 0.8µm
 
 ## Device picture
 
-![POCO F6 5G/Xiaomi Redmi Turbo 3](https://i02.appmifile.com/755_operator_sg/07/05/2024/6533de660f0c9a493e343af0dc4285be.png)
+![Xiaomi 14 Civi 5G/Xiaomi Xiaomi 14 Civi](https://i02.appmifile.com/755_operator_sg/07/05/2024/6533de660f0c9a493e343af0dc4285be.png)
 
 ## Copyright
 

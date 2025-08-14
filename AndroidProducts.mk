@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_peridot.mk
+    $(LOCAL_DIR)/lineage_chenfeng.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_peridot-eng \
-    lineage_peridot-userdebug \
-    lineage_peridot-user
+    lineage_chenfeng-eng \
+    lineage_chenfeng-userdebug \
+    lineage_chenfeng-user

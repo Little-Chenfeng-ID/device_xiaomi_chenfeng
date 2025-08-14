@@ -1,4 +1,4 @@
-# All unpinned blobs below are extracted from peridot 15 AQ3A.240912.001 OS2.0.104.0.VNPMIXM release-keys
+# All unpinned blobs below are extracted from chenfeng 15 AQ3A.240912.001 OS2.0.104.0.VNPMIXM release-keys
 
 # ACDB
 odm/etc/acdbdata/Fluence/Fluence_acdb_cal.acdb:odm/etc/acdbdata/cliffs_mtp/Fluence_acdb_cal.acdb
@@ -525,10 +525,10 @@ odm/etc/camera/npu_model/face/face_pre_480_270_model.nb
 odm/etc/camera/npu_model/face/face_pre_480_90_model.nb
 odm/etc/camera/ocr_aio
 odm/etc/camera/para_ini_cal.bin
-odm/etc/camera/peridot_aac_imx355_gt24p64e_ultra_i_eeprom_gloden.bin
-odm/etc/camera/peridot_aac_imx882_gt24p128f_wide_i_eeprom_gloden.bin
-odm/etc/camera/peridot_ofilm_imx355_p24c64e_ultra_ii_eeprom_gloden.bin
-odm/etc/camera/peridot_ofilm_ov20b40_p24c64e_front_eeprom_gloden.bin
+odm/etc/camera/chenfeng_aac_imx355_gt24p64e_ultra_i_eeprom_gloden.bin
+odm/etc/camera/chenfeng_aac_imx882_gt24p128f_wide_i_eeprom_gloden.bin
+odm/etc/camera/chenfeng_ofilm_imx355_p24c64e_ultra_ii_eeprom_gloden.bin
+odm/etc/camera/chenfeng_ofilm_ov20b40_p24c64e_front_eeprom_gloden.bin
 odm/etc/camera/portraitrepaire_front_class.json
 odm/etc/camera/portraitrepaire_front_class_bokeh.json
 odm/etc/camera/portraitrepaire_front_live.json
@@ -1286,38 +1286,38 @@ odm/firmware/CAMERA_ICP.elf
 odm/firmware/CAMERA_ICP_170.elf
 
 # Camera sensors
-odm/lib64/camera/com.qti.actuator.peridot_aac_imx882_gt9764ber_wide_i_actuator.so
-odm/lib64/camera/com.qti.actuator.peridot_ofilm_imx882_aw86016csr_wide_ii_actuator.so
-odm/lib64/camera/com.qti.actuator.peridot_ofilm_imx882_gt9764ber_wide_iii_actuator.so
-odm/lib64/camera/com.qti.eeprom.peridot_aac_imx355_gt24p64e_ultra_i_eeprom.so
-odm/lib64/camera/com.qti.eeprom.peridot_aac_imx882_gt24p128f_wide_i_eeprom.so
-odm/lib64/camera/com.qti.eeprom.peridot_aac_ov20b40_gt24p64e_front_ii_eeprom.so
-odm/lib64/camera/com.qti.eeprom.peridot_ofilm_imx355_p24c64e_ultra_ii_eeprom.so
-odm/lib64/camera/com.qti.eeprom.peridot_ofilm_imx882_bl24sa128b_wide_ii_eeprom.so
-odm/lib64/camera/com.qti.eeprom.peridot_ofilm_imx882_gt24p128f_wide_iii_eeprom.so
-odm/lib64/camera/com.qti.eeprom.peridot_ofilm_ov20b40_p24c64e_front_eeprom.so
-odm/lib64/camera/com.qti.sensor.peridot_aac_imx355_ultra_i.so
-odm/lib64/camera/com.qti.sensor.peridot_aac_imx882_wide_i.so
-odm/lib64/camera/com.qti.sensor.peridot_ofilm_ov20b40_front.so
-odm/lib64/camera/com.qti.sensormodule.peridot_aac_imx355_ultra_i.bin
-odm/lib64/camera/com.qti.sensormodule.peridot_aac_imx882_wide_i.bin
-odm/lib64/camera/com.qti.sensormodule.peridot_aac_ov20b40_front_ii.bin
-odm/lib64/camera/com.qti.sensormodule.peridot_ofilm_imx355_ultra_ii.bin
-odm/lib64/camera/com.qti.sensormodule.peridot_ofilm_imx882_wide_ii.bin
-odm/lib64/camera/com.qti.sensormodule.peridot_ofilm_imx882_wide_iii.bin
-odm/lib64/camera/com.qti.sensormodule.peridot_ofilm_ov20b40_front.bin
+odm/lib64/camera/com.qti.actuator.chenfeng_aac_imx882_gt9764ber_wide_i_actuator.so
+odm/lib64/camera/com.qti.actuator.chenfeng_ofilm_imx882_aw86016csr_wide_ii_actuator.so
+odm/lib64/camera/com.qti.actuator.chenfeng_ofilm_imx882_gt9764ber_wide_iii_actuator.so
+odm/lib64/camera/com.qti.eeprom.chenfeng_aac_imx355_gt24p64e_ultra_i_eeprom.so
+odm/lib64/camera/com.qti.eeprom.chenfeng_aac_imx882_gt24p128f_wide_i_eeprom.so
+odm/lib64/camera/com.qti.eeprom.chenfeng_aac_ov20b40_gt24p64e_front_ii_eeprom.so
+odm/lib64/camera/com.qti.eeprom.chenfeng_ofilm_imx355_p24c64e_ultra_ii_eeprom.so
+odm/lib64/camera/com.qti.eeprom.chenfeng_ofilm_imx882_bl24sa128b_wide_ii_eeprom.so
+odm/lib64/camera/com.qti.eeprom.chenfeng_ofilm_imx882_gt24p128f_wide_iii_eeprom.so
+odm/lib64/camera/com.qti.eeprom.chenfeng_ofilm_ov20b40_p24c64e_front_eeprom.so
+odm/lib64/camera/com.qti.sensor.chenfeng_aac_imx355_ultra_i.so
+odm/lib64/camera/com.qti.sensor.chenfeng_aac_imx882_wide_i.so
+odm/lib64/camera/com.qti.sensor.chenfeng_ofilm_ov20b40_front.so
+odm/lib64/camera/com.qti.sensormodule.chenfeng_aac_imx355_ultra_i.bin
+odm/lib64/camera/com.qti.sensormodule.chenfeng_aac_imx882_wide_i.bin
+odm/lib64/camera/com.qti.sensormodule.chenfeng_aac_ov20b40_front_ii.bin
+odm/lib64/camera/com.qti.sensormodule.chenfeng_ofilm_imx355_ultra_ii.bin
+odm/lib64/camera/com.qti.sensormodule.chenfeng_ofilm_imx882_wide_ii.bin
+odm/lib64/camera/com.qti.sensormodule.chenfeng_ofilm_imx882_wide_iii.bin
+odm/lib64/camera/com.qti.sensormodule.chenfeng_ofilm_ov20b40_front.bin
 odm/lib64/camera/com.qti.tuned.default.bin
-odm/lib64/camera/com.qti.tuned.peridot_aac_imx355_ultra_i.bin
-odm/lib64/camera/com.qti.tuned.peridot_aac_imx882_wide_i.bin
-odm/lib64/camera/com.qti.tuned.peridot_aac_ov20b40_front_ii.bin
-odm/lib64/camera/com.qti.tuned.peridot_ofilm_imx355_ultra_ii.bin
-odm/lib64/camera/com.qti.tuned.peridot_ofilm_imx882_wide_ii.bin
-odm/lib64/camera/com.qti.tuned.peridot_ofilm_imx882_wide_iii.bin
-odm/lib64/camera/com.qti.tuned.peridot_ofilm_ov20b40_front.bin
+odm/lib64/camera/com.qti.tuned.chenfeng_aac_imx355_ultra_i.bin
+odm/lib64/camera/com.qti.tuned.chenfeng_aac_imx882_wide_i.bin
+odm/lib64/camera/com.qti.tuned.chenfeng_aac_ov20b40_front_ii.bin
+odm/lib64/camera/com.qti.tuned.chenfeng_ofilm_imx355_ultra_ii.bin
+odm/lib64/camera/com.qti.tuned.chenfeng_ofilm_imx882_wide_ii.bin
+odm/lib64/camera/com.qti.tuned.chenfeng_ofilm_imx882_wide_iii.bin
+odm/lib64/camera/com.qti.tuned.chenfeng_ofilm_ov20b40_front.bin
 
 # Charger
 odm/etc/charger/BAA_config_common.json
-odm/etc/charger/BAA_config_peridot.json
+odm/etc/charger/BAA_config_chenfeng.json
 vendor/bin/batterysecret
 vendor/etc/charger_diag.cfg
 vendor/etc/init/hw/init.batterysecret.rc
@@ -1491,7 +1491,7 @@ vendor/lib64/rfs/dsp/libvpp_frc.so
 vendor/lib64/rfs/dsp/libfastcvadsp.so
 
 # Device Features
-product/etc/device_features/peridot.xml
+product/etc/device_features/chenfeng.xml
 
 # Diag
 system_ext/lib64/libdiag_system.so
@@ -2518,7 +2518,7 @@ vendor/lib64/hw/libEseUtils.so
 vendor/lib64/libGPQeSE.so
 vendor/lib64/vendor.xiaomi.hardware.aidl.mtdservice-V1-ndk_platform.so
 vendor/etc/hal_uuid_map_config.xml
-vendor/etc/hal_uuid_map_peridot.xml
+vendor/etc/hal_uuid_map_chenfeng.xml
 
 # Sensors
 odm/bin/test-nusensors
@@ -2722,8 +2722,8 @@ vendor/lib64/vendor.xiaomi.hw.touchfeature-V1-ndk_platform.so
 # Touchscreen
 odm/firmware/Conf_MultipleTest_TianMa.ini
 odm/firmware/focaltech_ts_fw_TianMa.bin
-odm/firmware/goodix_cfg_group_peridot_csot.bin
-odm/firmware/goodix_firmware_peridot_csot.bin
+odm/firmware/goodix_cfg_group_chenfeng_csot.bin
+odm/firmware/goodix_firmware_chenfeng_csot.bin
 odm/firmware/goodix_test_limits_255.csv
 
 # Trusted Execution Environment connector

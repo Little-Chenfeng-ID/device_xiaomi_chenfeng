@@ -5,8 +5,8 @@
 //
 
 cc_library_static {
-    name: "libinit_peridot",
-    srcs: ["init_peridot.cpp"],
+    name: "libinit_chenfeng",
+    srcs: ["init_chenfeng.cpp"],
     recovery_available: true,
     include_dirs: [
         "system/core/init",
