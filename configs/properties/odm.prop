@@ -1,5 +1,5 @@
 # Bluetooth
-bluetooth.device.default_name=Xiaomi 14
+bluetooth.device.default_name=Xiaomi 14 Civi
 
 # Camera
 debug.config.video.p3.encode.support=true
@@ -85,10 +85,10 @@ persist.vendor.fingerprint.type=udfps_optical
 persist.vendor.fingerprint.sensor_location=600|2390|109
 
 # Marketname
-ro.product.marketname=Xiaomi 14
+ro.product.marketname=Xiaomi 14 Civi
 
 # Qti
 ro.vendor.qti.va_odm.support=1
 
 # USB
-vendor.usb.product_string=Xiaomi 14
+vendor.usb.product_string=Xiaomi 14 Civi

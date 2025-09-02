@@ -5,7 +5,7 @@
 #
 
 # Call the proprietary setup.
-$(call inherit-product, vendor/xiaomi/houji/houji-vendor.mk)
+$(call inherit-product, vendor/xiaomi/chenfeng/chenfeng-vendor.mk)
 
 # Enable virtual AB with vendor ramdisk
 $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota/vabc_features.mk)
@@ -55,7 +55,7 @@ PRODUCT_PACKAGES += \
 
 # init
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/init/init.houji.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.houji.rc \
+    $(LOCAL_PATH)/init/init.chenfeng.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.chenfeng.rc \
 
 # Powershare
 PRODUCT_PACKAGES += \
@@ -279,10 +279,10 @@ PRODUCT_ENFORCE_RRO_TARGETS := *
 PRODUCT_PACKAGES += \
     CarrierConfig \
     FrameworksResXiaomi \
-    FrameworksResHouji \
-    HoujiEuiccOverlay \
-    SettingsOverlayHouji \
-    SystemUIResHouji \
+    FrameworksResChenfeng \
+    ChenfengEuiccOverlay \
+    SettingsOverlayChenfeng \
+    SystemUIResChenfeng \
     SettingsResXiaomi \
     TelephonyResCommon \
     WifiResCommon \

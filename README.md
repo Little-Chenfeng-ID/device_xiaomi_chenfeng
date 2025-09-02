@@ -1,4 +1,4 @@
-#  Device Tree for Xiaomi 14 (houji)
+#  Device Tree for Xiaomi 14 Civi (chenfeng)
 
 ## Spec Sheet
 
@@ -21,7 +21,7 @@
 
 ## Device Picture
 
-![Xiaomi 14](https://www.giztop.com/media/catalog/product/cache/dc206057cdd42d7e34b9d36e347785ca/p/m/pms_1698307643.47797553.png)
-![Xiaomi 14](https://www.giztop.com/media/catalog/product/cache/dc206057cdd42d7e34b9d36e347785ca/p/m/pms_1698307643.47369771.png)
-![Xiaomi 14](https://www.giztop.com/media/catalog/product/cache/dc206057cdd42d7e34b9d36e347785ca/p/m/pms_1698307643.50924527.png)
-![Xiaomi 14](https://www.giztop.com/media/catalog/product/cache/dc206057cdd42d7e34b9d36e347785ca/p/m/pms_1698307643.55548339.png)
+![Xiaomi 14 Civi](https://www.giztop.com/media/catalog/product/cache/dc206057cdd42d7e34b9d36e347785ca/p/m/pms_1698307643.47797553.png)
+![Xiaomi 14 Civi](https://www.giztop.com/media/catalog/product/cache/dc206057cdd42d7e34b9d36e347785ca/p/m/pms_1698307643.47369771.png)
+![Xiaomi 14 Civi](https://www.giztop.com/media/catalog/product/cache/dc206057cdd42d7e34b9d36e347785ca/p/m/pms_1698307643.50924527.png)
+![Xiaomi 14 Civi](https://www.giztop.com/media/catalog/product/cache/dc206057cdd42d7e34b9d36e347785ca/p/m/pms_1698307643.55548339.png)

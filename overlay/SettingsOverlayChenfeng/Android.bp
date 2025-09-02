@@ -5,7 +5,7 @@
 //
 
 runtime_resource_overlay {
-    name: "SettingsOverlayHouji",
+    name: "SettingsOverlayChenfeng",
     sdk_version: "current",
     vendor: true,
 }

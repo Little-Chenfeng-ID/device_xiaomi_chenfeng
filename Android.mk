@@ -6,7 +6,7 @@
 
 LOCAL_PATH := $(call my-dir)
 
-ifneq ($(filter houji,$(TARGET_DEVICE)),)
+ifneq ($(filter chenfeng,$(TARGET_DEVICE)),)
 	include $(call all-makefiles-under,$(LOCAL_PATH))
 	include $(CLEAR_VARS)
 

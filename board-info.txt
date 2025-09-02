@@ -1,1 +1,1 @@
-require board=houji|houjiin|pineapple
+require board=chenfeng|chenfengin|pineapple

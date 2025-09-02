@@ -5,6 +5,6 @@
 //
 
 runtime_resource_overlay {
-    name: "HoujiEuiccOverlay",
+    name: "ChenfengEuiccOverlay",
     device_specific: true,
 }

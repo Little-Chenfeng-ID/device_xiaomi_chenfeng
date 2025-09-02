@@ -1,8 +1,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="org.lineageos.settingsoverlay.houji">
+    package="org.lineageos.settingsoverlay.chenfeng">
     <application android:hasCode="false" />
     <overlay android:isStatic="true"
              android:priority="1"
              android:targetPackage="com.android.settings"
-             android:targetName="HoujiSettingsOverlay" />
+             android:targetName="ChenfengSettingsOverlay" />
 </manifest>

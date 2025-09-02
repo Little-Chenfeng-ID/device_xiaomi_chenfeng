@@ -59,26 +59,26 @@ void vendor_load_properties() {
     string sku = GetProperty("ro.boot.hardware.sku", "");
 
     // Normalize SKU
-    if (sku == "houjiin") {
-        sku = "houji";
+    if (sku == "chenfengin") {
+        sku = "chenfeng";
     }
 
     // Override device specific props
     set_build_prop("ro.build.product", sku);
     set_ro_build_prop("device", sku);
 
-    if (sku == "houji") { // Xiaomi 14
+    if (sku == "chenfeng") { // Xiaomi 14 Civi
         if (region == "CN") { // China
             set_ro_build_prop("model", "23127PN0CC");
-            set_ro_build_prop("name", "houji");
+            set_ro_build_prop("name", "chenfeng");
         } else if (region == "IN") { // Indian
             set_ro_build_prop("model", "23127PN0CG");
-            set_ro_build_prop("name", "houji");
+            set_ro_build_prop("name", "chenfeng");
         } else {              // Global
             set_ro_build_prop("model", "23127PN0CG");
-            set_ro_build_prop("name", "houji_global");
+            set_ro_build_prop("name", "chenfeng_global");
         }
-    } else if (sku == "shennong") { // Xiaomi 14 Pro
+    } else if (sku == "shennong") { // Xiaomi 14 Civi Pro
         if (region == "CN") { // China
             set_ro_build_prop("model", "23116PN5BC");
             set_ro_build_prop("name", "shennong_global");
@@ -86,7 +86,7 @@ void vendor_load_properties() {
             set_ro_build_prop("model", "2311BPN23C");
             set_ro_build_prop("name", "shennong");
         }
-    } else if (sku == "aurora") { // Xiaomi 14 Ultra
+    } else if (sku == "aurora") { // Xiaomi 14 Civi Ultra
         if (region == "CN") { // China
             set_ro_build_prop("model", "24031PN0DC");
             set_ro_build_prop("name", "aurora");
