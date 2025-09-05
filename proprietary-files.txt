@@ -1806,7 +1806,7 @@ odm/lib64/com.xiaomi.camhal.submodel.chifrag.so
 odm/lib64/com.xiaomi.camx.hook.so
 odm/lib64/com.xiaomi.chi.hook.so
 odm/lib64/com.xiaomi.drivermqs.so
-odm/lib64/com.xiaomi.immunesystem.so
+odm/lib64/com.xiaomi.immunesystem.so;DISABLE_DEPS
 odm/lib64/com.xiaomi.mivi.hook.so
 odm/lib64/hw/camera.qcom.sm8650.so
 odm/lib64/hw/camera.qcom.so
@@ -1975,6 +1975,7 @@ odm/lib64/libwrapper_dlengine.so;DISABLE_CHECKELF
 odm/lib64/libXMFaceFocus.so
 odm/lib64/libxmi_hdr_checker.so
 odm/lib64/libxmi_slow_motion_mein.so
+odm/lib64/libITT.so
 
 # Camera vendor
 vendor/etc/camera/cameraopt_perf.json
@@ -2975,6 +2976,7 @@ odm/lib64/libQnnSaver.so
 odm/lib64/libQnnSystem.so
 
 # NFC
+vendor/lib64/libstnfc-streset.so
 system_ext/etc/permissions/com.nxp.nfc.nq.xml
 odm/etc/libnfc-nci.conf
 odm/etc/libnfc-nxp_RF.conf
@@ -3863,3 +3865,13 @@ vendor/lib64/vendor.qti.hardware.wifidisplaysessionl@1.0-halimpl.so
 
 # Xiaomi MAC address
 vendor/bin/nv_mac
+
+# MISC
+odm/lib64/libminikin.xiaomi.so
+odm/lib64/librendercore.so
+odm/lib64/libwa_widelens_undistort.so
+odm/lib64/libshadowhook.so
+odm/lib64/liblocalFlickerDet.so
+odm/lib64/libmiStereoCalibLib_qual.so
+odm/lib64/libMiStereoFactoryCalibAnalyzeBin_qual.so
+odm/lib64/sqlite3.so
