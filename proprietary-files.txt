@@ -95,9 +95,6 @@ vendor/lib64/libvmmem.so
 # ADSP modules
 odm/etc/audio/misound_karaoke_res.bin
 odm/etc/audio/misound_karaokemix_res.bin
-odm/etc/audio/misound_res_headphone.bin
-odm/etc/audio/misound_res_spk.bin
-odm/etc/audio/misound_res_spk4ch.bin
 odm/etc/audio/misound_res_spk_power_game.bin
 odm/etc/audio/misound_res_spk_power_sva.bin
 odm/etc/audio/misound_res_spk_power_video.bin
@@ -1895,25 +1892,17 @@ odm/lib64/libjpege.so;DISABLE_CHECKELF
 odm/lib64/libmctfengine_stub.so;DISABLE_CHECKELF
 odm/lib64/libmfec.so;DISABLE_CHECKELF
 odm/lib64/libmfGhostDetection.so
-odm/lib64/libmi_hdr_raw.so
-odm/lib64/libmi_llhdr_raw.so
-odm/lib64/libmi_mfnr_raw.so
 odm/lib64/libmiai_deblur.so
 odm/lib64/libmiaio_aio_seg.so
-odm/lib64/libmiaio_det_sceneseg.so
-odm/lib64/libmialgo_ai_vision.so
 odm/lib64/libmialgo_aio_seg.so
-odm/lib64/libmialgo_aiur.so
+odm/lib64/libmialgo_ai_vision.so
 odm/lib64/libmialgo_deepfill.so
-odm/lib64/libmialgo_depth_arc_hdr.so
 odm/lib64/libmialgo_depth.so
 odm/lib64/libmialgo_ds_nn.so
 odm/lib64/libmialgo_ellc.so
 odm/lib64/libmialgo_globalsaliency.so
-odm/lib64/libmiaio_head_seg.so
 odm/lib64/libmialgo_ie_capture.so
 odm/lib64/libmialgo_sd.so
-odm/lib64/libmialgo_sdsr.so
 odm/lib64/libmialgo_snsc.so
 odm/lib64/libmialgo_utils.so
 odm/lib64/libmialgo_video_colourkeeping.so
@@ -1925,11 +1914,11 @@ odm/lib64/libmicamera_adapter.so
 odm/lib64/libMiMotion.so
 odm/lib64/libmiocr.so
 odm/lib64/libmiphone_capture_bokeh.so
+odm/lib64/libmiphone_capture_depth.so
 odm/lib64/libmiphone_capture_mdbokeh.so
 odm/lib64/libmiphone_preview_bokeh.so
 odm/lib64/libmiphone_preview_depth.so
 odm/lib64/libmiphone_preview_mdbokeh.so
-odm/lib64/libmiphone_tsspot.so
 odm/lib64/libmis_platform.so
 odm/lib64/libmis_plugin_dummy.so
 odm/lib64/libmis_plugin_gme.so
@@ -1941,16 +1930,14 @@ odm/lib64/libmiSAT.so
 odm/lib64/libmiSATTranslate.so
 odm/lib64/libMiVideoFilter.so;DISABLE_CHECKELF
 odm/lib64/libmiZA.so
-odm/lib64/libmmcamera_bestats.so;DISABLE_CHECKELF
-odm/lib64/libmmcamera_cac.so;DISABLE_CHECKELF
-odm/lib64/libmmcamera_lscv35.so;DISABLE_CHECKELF
-odm/lib64/libmmcamera_mfnr.so;DISABLE_CHECKELF
-odm/lib64/libmmcamera_mfnr_t4.so;DISABLE_CHECKELF
-odm/lib64/libmmcamera_pdpc.so;DISABLE_CHECKELF
-odm/lib64/libmorpho_ubwc.so;DISABLE_CHECKELF
+odm/lib64/libmmcamera_bestats.so
+odm/lib64/libmmcamera_cac.so
+odm/lib64/libmmcamera_lscv35.so
+odm/lib64/libmmcamera_pdpc.so
+odm/lib64/libmorpho_Depurple.so
+odm/lib64/libmorpho_ubwc.so
 odm/lib64/libmorpho_video_stabilizer.so
 odm/lib64/libmpbase.so
-odm/lib64/libocr_api.so
 odm/lib64/libofflinedebugdata.so
 odm/lib64/libofflinefeatureintf.so;DISABLE_CHECKELF
 odm/lib64/libomp.so
@@ -1963,7 +1950,6 @@ odm/lib64/libqll.so
 odm/lib64/libqll10.so
 odm/lib64/libqllengine.so
 odm/lib64/libqsegnet.so
-odm/lib64/librawnrv2_shared.so
 odm/lib64/libremosaic_wrapper.so
 odm/lib64/libremosaiclib.so
 odm/lib64/librmsclib1.so
@@ -1981,7 +1967,6 @@ odm/lib64/libsnpe_config.so;DISABLE_CHECKELF
 odm/lib64/libsupermoon.so
 odm/lib64/libswregistrationalgo.so
 odm/lib64/libtfestriping.so;DISABLE_CHECKELF
-odm/lib64/libtunningmemhook.so;DISABLE_CHECKELF
 odm/lib64/libTrueSight.so;DISABLE_CHECKELF
 odm/lib64/libubifocus.so;DISABLE_CHECKELF
 odm/lib64/libvideoBokeh.so
@@ -2558,7 +2543,7 @@ vendor/lib64/vendor.qti.hardware.embmsslaidl-V1-ndk.so
 vendor/lib64/vendor.qti.esepowermanager@1.0.so
 
 # Euicc - from shiba-user-15-BP1A.250405.005.B1-13151136-release-keys
-product/priv-app/EuiccGoogle/EuiccGoogle.apk|c792c42ba4cd171752d7ce5516a56ecb9858dc69
+#product/priv-app/EuiccGoogle/EuiccGoogle.apk|c792c42ba4cd171752d7ce5516a56ecb9858dc69
 
 # Fingerprint
 odm/lib64/hw/fingerprint.goodix_fod.so:odm/lib64/hw/fingerprint.goodix_fod.default.so;FIX_SONAME
@@ -2936,14 +2921,6 @@ vendor/etc/vintf/manifest/vendor.qti.hardware.factory.ifactory.xml
 vendor/lib64/vendor.qti.hardware.factory-V1-ndk.so
 vendor/lib64/vendor.qti.hardware.factory@1.0.so
 vendor/lib64/vendor.qti.hardware.factory@1.1.so
-
-# ML
-odm/lib64/MLPD_0.pickle
-odm/lib64/MLPD_1.pickle
-odm/lib64/MLPD_2.pickle
-odm/lib64/MLPD_3.pickle
-odm/lib64/MLPD_4.pickle
-odm/lib64/MLPD_5.pickle
 
 # Mlipay
 odm/bin/fidoca
@@ -3747,9 +3724,6 @@ odm/bin/toucheventcheck
 odm/etc/init.panel_info.sh
 odm/etc/init/vendor.xiaomi.hw.touchfeature-service.rc
 odm/etc/vintf/manifest/vendor.xiaomi.hw.touchfeature-service.xml
-odm/lib64/libtensorflowlite_touch_c.so
-odm/lib64/libtouchreport.so
-odm/lib64/libtouchsensor.so
 vendor/lib64/vendor.xiaomi.hw.touchfeature-V1-ndk_platform.so
 
 # Trusted Execution Environment connector
